@@ -9,56 +9,68 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Color
-        HStack {
-            ZStack{
-                MyBitmojiCircle(buttonColor:.gray)
+        HStack(spacing: 8) {
+            ScrollView{
+                Text("HELLo")
+                    .font(.largeTitle)
+                    .fontWeight(.black)
+                    .foregroundColor(.black)
+                    .padding(.top,1)
+                    .frame(width: 362.0, height: 670.0)
+                    .padding()
+                
+                
             }
-            Spacer()
+            .background(
+                RoundedRectangle(cornerRadius: 10)
+                    .foregroundColor(.gray)
+                    .padding(.top,30)
+            )
+        }
+    }
+}
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        VStack{
             
-            Image(systemName: "darkSearch")
+            TabView(selection: Binding.constant(3)) {
+                
+                Text("map")
+                    .tabItem {
+                        Image(systemName: "map" )
+                    }
+                    .tag(1)
+                
+                ContentView()
+                    .tabItem {
+                        Image(systemName: "bubble.right")
+                    }
+                    .tag(2)
+                
+                Text("camera")
+                    .tabItem {
+                        Image(systemName: "camera" )
+                    }
+                    .tag(3)
+                
+                Text("stories")
+                    .tabItem {
+                        Image(systemName: "person.2")
+                    }
+                    .tag(4)
+                
+                Text("spotlight")
+                    .tabItem {
+                        Image(systemName: "play")
+                    }
+                    .tag(5)
+                
+            }
             
+            VStack{
+               
+            }
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-            TabView {
-                
-                TabView(selection: Binding.constant(3)) {
-                    
-                    Text("map")
-                        .tabItem {
-                            Image(systemName: "map" )
-                            
-                        }
-                        .tag(1)
-                    ContentView()
-                        .tabItem {
-                            Image(systemName: "chat" )
-                        }
-                        .tag(2)
-                    Text("camera")
-                        .tabItem {
-                            Image(systemName: "camera" )
-                        }
-                        .tag(3)
-                    Text("stories")
-                        .tabItem {
-                            Image(systemName: "stories" )
-                        }
-                        .tag(4)
-                    Text("spotlight")
-                        .tabItem {
-                            Image(systemName: "spotlight" )
-                        }
-                        .tag(5)
-                    
-                        .accentColor(.blue)
-                        .preferredColorScheme(.dark)
-                
-            }
-        }
-    }
-}
