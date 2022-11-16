@@ -24,6 +24,7 @@ struct FriendListView: View {
                     .frame(width: 30)
                     .padding()
                 Text(name)
+                    .font(.custom("largeTitle", size: 20))
                 Spacer()
                 Text("00:00.00")
             }

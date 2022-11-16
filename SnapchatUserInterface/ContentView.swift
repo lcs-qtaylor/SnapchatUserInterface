@@ -9,17 +9,29 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        
         HStack(spacing: 8) {
-            ScrollView{
-                
-                List {
-                    Group {
+            
+            NavigationView {
+                Form{
+                    Section{
+                        ScrollView{
+                            
+                            List {
+                                Group {
+                                    
+                                }
+                            }
+                            .navigationTitle("SwiftUI")
+                        }
+                        
+                        
                         VStack{
-                        FriendListView(name: "Freddy", Bitmoji: .blue, destination: UIView())
-                        
-                        FriendListView(name: "Bobby", Bitmoji: .yellow, destination: UIView())
-                        
-                        FriendListView(name: "Jeff", Bitmoji: .pink, destination: UIView())
+                            FriendListView(name: "Freddy", Bitmoji: .blue, destination: UIView())
+                            
+                            FriendListView(name: "Bobby", Bitmoji: .yellow, destination: UIView())
+                            
+                            FriendListView(name: "Jeff", Bitmoji: .pink, destination: UIView())
                             
                             FriendListView(name: "tod", Bitmoji: .orange, destination: UIView())
                             
@@ -28,7 +40,7 @@ struct ContentView: View {
                             FriendListView(name: "james", Bitmoji: .red, destination: UIView())
                             
                             
-                      
+                            
                             
                         }
                     }
@@ -43,19 +55,15 @@ struct ContentView: View {
                 
                 
             }
-//            .background(
-//                RoundedRectangle(cornerRadius: 10)
-//                    .foregroundColor(.gray)
-//                    .padding(.top,30)
-//            )
+            .background(Color.yellow)
         }
     }
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
-            VStack{
+            
+            
+            TabView(selection: Binding.constant(3)) {
                 
-                TabView(selection: Binding.constant(3)) {
-                    
                     Text("map")
                         .tabItem {
                             Image(systemName: "map" )
@@ -85,9 +93,6 @@ struct ContentView: View {
                             Image(systemName: "play")
                         }
                         .tag(5)
-                    
-                }
-                
                 
             }
         }

@@ -14,6 +14,7 @@
 		96AFDD31292554E700B7A1C5 /* MyBitmojiCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AFDD30292554E700B7A1C5 /* MyBitmojiCircle.swift */; };
 		96CBF1FD29256FBF00EB966C /* chatview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CBF1FC29256FBF00EB966C /* chatview.swift */; };
 		96CBF1FF2925709600EB966C /* FriendListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CBF1FE2925709600EB966C /* FriendListView.swift */; };
+		96CBF201292580A300EB966C /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CBF200292580A300EB966C /* CameraView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		96AFDD30292554E700B7A1C5 /* MyBitmojiCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBitmojiCircle.swift; sourceTree = "<group>"; };
 		96CBF1FC29256FBF00EB966C /* chatview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatview.swift; sourceTree = "<group>"; };
 		96CBF1FE2925709600EB966C /* FriendListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListView.swift; sourceTree = "<group>"; };
+		96CBF200292580A300EB966C /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				96AFDD30292554E700B7A1C5 /* MyBitmojiCircle.swift */,
 				96CBF1FC29256FBF00EB966C /* chatview.swift */,
 				96CBF1FE2925709600EB966C /* FriendListView.swift */,
+				96CBF200292580A300EB966C /* CameraView.swift */,
 			);
 			path = SnapchatUserInterface;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 				96CBF1FD29256FBF00EB966C /* chatview.swift in Sources */,
 				96AFDD25292542C300B7A1C5 /* ContentView.swift in Sources */,
 				96AFDD31292554E700B7A1C5 /* MyBitmojiCircle.swift in Sources */,
+				96CBF201292580A300EB966C /* CameraView.swift in Sources */,
 				96AFDD23292542C300B7A1C5 /* SnapchatUserInterfaceApp.swift in Sources */,
 				96CBF1FF2925709600EB966C /* FriendListView.swift in Sources */,
 			);
