@@ -10,22 +10,25 @@ import SwiftUI
 struct FriendListView: View {
     let name: String
     let Bitmoji: String
-//    let destination: any View
     let time: String
     let square: String
     
     var body: some View{
         ZStack{
             NavigationLink(destination:{
-               
+                
             }, label: {
                 
                 HStack{
-                    Image(systemName: Bitmoji)
-//                    Circle()
-//                        .foregroundColor(item.Bitmoji)
-//                        .frame(width: 30)
-//                        .padding()
+                    ZStack{
+                        Circle()
+                            .foregroundColor(.clear)
+                            .frame(width: 35)
+                            .padding()
+                        
+                        Image(Bitmoji)
+                            
+                    }
                     VStack{
                         Text(name)
                             .font(.custom("largeTitle", size: 20))
@@ -38,7 +41,22 @@ struct FriendListView: View {
                         }
                     }
                     Spacer()
-                    Image(systemName: "camera")
+                    
+                    ZStack{
+                        Button(action: {
+                            
+                           
+                            
+                        }, label: {
+                            
+                            Image(systemName: "camera")
+                            
+                        })
+                        
+                    }
+                    
+                    
+                    
                 }
             })
         }
@@ -48,9 +66,8 @@ struct FriendListView: View {
 struct FriendListView_Previews: PreviewProvider {
     static var previews: some View {
         FriendListView( name: "Quinlan",
-                       Bitmoji: "person.fill",
-//                       destination: View.self as! View,
-                       time: "h",
-                       square: "square.fill")
+                        Bitmoji: "person.fill",
+                        time: "h",
+                        square: "square.fill")
     }
 }
