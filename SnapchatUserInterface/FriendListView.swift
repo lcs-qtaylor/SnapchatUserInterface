@@ -10,12 +10,14 @@ import SwiftUI
 struct FriendListView: View {
     let name: String
     let Bitmoji: Color
-    let destination: UIView
+    let destination: any View
+    let time: String
+    let square: String
+    
+    var body: some View{
         
-    var body: some View {
-       
         NavigationLink(destination:{
-            chatview()
+            
         }, label: {
             
             HStack{
@@ -23,10 +25,19 @@ struct FriendListView: View {
                     .foregroundColor(Bitmoji)
                     .frame(width: 30)
                     .padding()
-                Text(name)
+                VStack{
+                    Text(name)
                     .font(.custom("largeTitle", size: 20))
+                    HStack{
+                        Image(systemName: square)
+                        Text("New Snap")
+                        Text(":")
+                        Text(time)
+                        
+                    }
+                }
                 Spacer()
-                Text("00:00.00")
+                Image(systemName: "camera")
             }
         })
     }
@@ -34,8 +45,10 @@ struct FriendListView: View {
 
 struct FriendListView_Previews: PreviewProvider {
     static var previews: some View {
-        FriendListView(name: "quinlan",
+        FriendListView(name: "Quinlan",
                        Bitmoji:.red,
-                       destination: UIView())
+                       destination: View.self as! View,
+                       time: "h",
+                       square: "square.fill")
     }
 }

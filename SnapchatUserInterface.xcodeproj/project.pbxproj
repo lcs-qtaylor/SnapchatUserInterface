@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		963518BE2925AE560028F6E5 /* secondview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963518BD2925AE560028F6E5 /* secondview.swift */; };
+		963518C02925AFBA0028F6E5 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963518BF2925AFBA0028F6E5 /* model.swift */; };
 		96AFDD23292542C300B7A1C5 /* SnapchatUserInterfaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AFDD22292542C300B7A1C5 /* SnapchatUserInterfaceApp.swift */; };
 		96AFDD25292542C300B7A1C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AFDD24292542C300B7A1C5 /* ContentView.swift */; };
 		96AFDD27292542C400B7A1C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96AFDD26292542C400B7A1C5 /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		963518BD2925AE560028F6E5 /* secondview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondview.swift; sourceTree = "<group>"; };
+		963518BF2925AFBA0028F6E5 /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
 		96AFDD1F292542C200B7A1C5 /* SnapchatUserInterface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapchatUserInterface.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96AFDD22292542C300B7A1C5 /* SnapchatUserInterfaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapchatUserInterfaceApp.swift; sourceTree = "<group>"; };
 		96AFDD24292542C300B7A1C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,12 +65,14 @@
 			children = (
 				96AFDD22292542C300B7A1C5 /* SnapchatUserInterfaceApp.swift */,
 				96AFDD24292542C300B7A1C5 /* ContentView.swift */,
+				963518BF2925AFBA0028F6E5 /* model.swift */,
 				96AFDD26292542C400B7A1C5 /* Assets.xcassets */,
 				96AFDD28292542C400B7A1C5 /* Preview Content */,
 				96AFDD30292554E700B7A1C5 /* MyBitmojiCircle.swift */,
 				96CBF1FC29256FBF00EB966C /* chatview.swift */,
 				96CBF1FE2925709600EB966C /* FriendListView.swift */,
 				96CBF200292580A300EB966C /* CameraView.swift */,
+				963518BD2925AE560028F6E5 /* secondview.swift */,
 			);
 			path = SnapchatUserInterface;
 			sourceTree = "<group>";
@@ -149,12 +155,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				963518BE2925AE560028F6E5 /* secondview.swift in Sources */,
 				96CBF1FD29256FBF00EB966C /* chatview.swift in Sources */,
 				96AFDD25292542C300B7A1C5 /* ContentView.swift in Sources */,
 				96AFDD31292554E700B7A1C5 /* MyBitmojiCircle.swift in Sources */,
 				96CBF201292580A300EB966C /* CameraView.swift in Sources */,
 				96AFDD23292542C300B7A1C5 /* SnapchatUserInterfaceApp.swift in Sources */,
 				96CBF1FF2925709600EB966C /* FriendListView.swift in Sources */,
+				963518C02925AFBA0028F6E5 /* model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
