@@ -22,6 +22,14 @@
 		96CBF201292580A300EB966C /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CBF200292580A300EB966C /* CameraView.swift */; };
 		96D027032925E2C9008EEAE6 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D027022925E2C9008EEAE6 /* DetailView.swift */; };
 		96D027052925E4CA008EEAE6 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D027042925E4CA008EEAE6 /* TextView.swift */; };
+		96D9F7E52926AF2200FB6905 /* MapContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9F7E42926AF2200FB6905 /* MapContentView.swift */; };
+		96D9F7E82926B2A500FB6905 /* MapNavigationTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9F7E72926B2A500FB6905 /* MapNavigationTitle.swift */; };
+		96D9F7EA2926B2D900FB6905 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9F7E92926B2D900FB6905 /* MapView.swift */; };
+		96D9F7F02926B90500FB6905 /* Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9F7EF2926B90500FB6905 /* Picker.swift */; };
+		96D9F7F32926B93100FB6905 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9F7F22926B93100FB6905 /* ImagePicker.swift */; };
+		96D9F7F52926B94000FB6905 /* ZoomableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9F7F42926B94000FB6905 /* ZoomableScrollView.swift */; };
+		96D9F7F82926BBD700FB6905 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9F7F72926BBD700FB6905 /* FileManager.swift */; };
+		96D9F7FD2926BD6700FB6905 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9F7FC2926BD6700FB6905 /* CameraViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +49,14 @@
 		96CBF200292580A300EB966C /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		96D027022925E2C9008EEAE6 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		96D027042925E4CA008EEAE6 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		96D9F7E42926AF2200FB6905 /* MapContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapContentView.swift; sourceTree = "<group>"; };
+		96D9F7E72926B2A500FB6905 /* MapNavigationTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapNavigationTitle.swift; sourceTree = "<group>"; };
+		96D9F7E92926B2D900FB6905 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		96D9F7EF2926B90500FB6905 /* Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picker.swift; sourceTree = "<group>"; };
+		96D9F7F22926B93100FB6905 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		96D9F7F42926B94000FB6905 /* ZoomableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomableScrollView.swift; sourceTree = "<group>"; };
+		96D9F7F72926BBD700FB6905 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		96D9F7FC2926BD6700FB6905 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,21 +89,19 @@
 		96AFDD21292542C200B7A1C5 /* SnapchatUserInterface */ = {
 			isa = PBXGroup;
 			children = (
+				96D9F7E32926AE2D00FB6905 /* Chat Home screen */,
 				96AFDD22292542C300B7A1C5 /* SnapchatUserInterfaceApp.swift */,
-				96AFDD24292542C300B7A1C5 /* ContentView.swift */,
-				963518BF2925AFBA0028F6E5 /* model.swift */,
 				96AFDD26292542C400B7A1C5 /* Assets.xcassets */,
 				96AFDD28292542C400B7A1C5 /* Preview Content */,
 				96AFDD30292554E700B7A1C5 /* MyBitmojiCircle.swift */,
-				96CBF1FC29256FBF00EB966C /* chatview.swift */,
 				96D027042925E4CA008EEAE6 /* TextView.swift */,
-				96CBF1FE2925709600EB966C /* FriendListView.swift */,
-				96D027022925E2C9008EEAE6 /* DetailView.swift */,
-				96CBF200292580A300EB966C /* CameraView.swift */,
 				961CF72E2925F33F00711F3D /* ProfileView.swift */,
 				961CF7302925F34E00711F3D /* SearchView.swift */,
 				961CF7342925F39600711F3D /* AddNewFriendView.swift */,
 				961CF7362925F3B400711F3D /* OptionsView.swift */,
+				96D9F7EB2926B8AC00FB6905 /* Camera */,
+				96D9F7E62926AF2800FB6905 /* Map */,
+				96D9F7E72926B2A500FB6905 /* MapNavigationTitle.swift */,
 			);
 			path = SnapchatUserInterface;
 			sourceTree = "<group>";
@@ -98,6 +112,80 @@
 				96AFDD29292542C400B7A1C5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		96D9F7E32926AE2D00FB6905 /* Chat Home screen */ = {
+			isa = PBXGroup;
+			children = (
+				96D027022925E2C9008EEAE6 /* DetailView.swift */,
+				963518BF2925AFBA0028F6E5 /* model.swift */,
+				96AFDD24292542C300B7A1C5 /* ContentView.swift */,
+				96CBF1FC29256FBF00EB966C /* chatview.swift */,
+				96CBF1FE2925709600EB966C /* FriendListView.swift */,
+			);
+			path = "Chat Home screen";
+			sourceTree = "<group>";
+		};
+		96D9F7E62926AF2800FB6905 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				96D9F7E92926B2D900FB6905 /* MapView.swift */,
+				96D9F7E42926AF2200FB6905 /* MapContentView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		96D9F7EB2926B8AC00FB6905 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				96D9F7F92926BC4200FB6905 /* CameraViews */,
+				96D9F7FA2926BC5D00FB6905 /* CameraViewModels */,
+				96D9F7FB2926BC8500FB6905 /* CameraModels */,
+				96D9F7F62926B95100FB6905 /* extentions */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		96D9F7F12926B91300FB6905 /* UIViewRepresentables */ = {
+			isa = PBXGroup;
+			children = (
+				96D9F7F22926B93100FB6905 /* ImagePicker.swift */,
+				96D9F7F42926B94000FB6905 /* ZoomableScrollView.swift */,
+			);
+			path = UIViewRepresentables;
+			sourceTree = "<group>";
+		};
+		96D9F7F62926B95100FB6905 /* extentions */ = {
+			isa = PBXGroup;
+			children = (
+				96D9F7F72926BBD700FB6905 /* FileManager.swift */,
+			);
+			path = extentions;
+			sourceTree = "<group>";
+		};
+		96D9F7F92926BC4200FB6905 /* CameraViews */ = {
+			isa = PBXGroup;
+			children = (
+				96CBF200292580A300EB966C /* CameraView.swift */,
+			);
+			path = CameraViews;
+			sourceTree = "<group>";
+		};
+		96D9F7FA2926BC5D00FB6905 /* CameraViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				96D9F7FC2926BD6700FB6905 /* CameraViewModel.swift */,
+			);
+			path = CameraViewModels;
+			sourceTree = "<group>";
+		};
+		96D9F7FB2926BC8500FB6905 /* CameraModels */ = {
+			isa = PBXGroup;
+			children = (
+				96D9F7EF2926B90500FB6905 /* Picker.swift */,
+				96D9F7F12926B91300FB6905 /* UIViewRepresentables */,
+			);
+			path = CameraModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,16 +259,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				96D027032925E2C9008EEAE6 /* DetailView.swift in Sources */,
+				96D9F7EA2926B2D900FB6905 /* MapView.swift in Sources */,
 				96CBF1FD29256FBF00EB966C /* chatview.swift in Sources */,
+				96D9F7F82926BBD700FB6905 /* FileManager.swift in Sources */,
 				96AFDD25292542C300B7A1C5 /* ContentView.swift in Sources */,
 				961CF7312925F34E00711F3D /* SearchView.swift in Sources */,
 				96AFDD31292554E700B7A1C5 /* MyBitmojiCircle.swift in Sources */,
+				96D9F7E82926B2A500FB6905 /* MapNavigationTitle.swift in Sources */,
+				96D9F7F32926B93100FB6905 /* ImagePicker.swift in Sources */,
+				96D9F7F02926B90500FB6905 /* Picker.swift in Sources */,
 				96CBF201292580A300EB966C /* CameraView.swift in Sources */,
+				96D9F7FD2926BD6700FB6905 /* CameraViewModel.swift in Sources */,
+				96D9F7F52926B94000FB6905 /* ZoomableScrollView.swift in Sources */,
 				96AFDD23292542C300B7A1C5 /* SnapchatUserInterfaceApp.swift in Sources */,
 				961CF7352925F39600711F3D /* AddNewFriendView.swift in Sources */,
 				961CF7372925F3B400711F3D /* OptionsView.swift in Sources */,
 				96CBF1FF2925709600EB966C /* FriendListView.swift in Sources */,
 				963518C02925AFBA0028F6E5 /* model.swift in Sources */,
+				96D9F7E52926AF2200FB6905 /* MapContentView.swift in Sources */,
 				961CF72F2925F33F00711F3D /* ProfileView.swift in Sources */,
 				96D027052925E4CA008EEAE6 /* TextView.swift in Sources */,
 			);
