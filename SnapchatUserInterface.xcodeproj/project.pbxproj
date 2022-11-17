@@ -17,6 +17,8 @@
 		96CBF1FD29256FBF00EB966C /* chatview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CBF1FC29256FBF00EB966C /* chatview.swift */; };
 		96CBF1FF2925709600EB966C /* FriendListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CBF1FE2925709600EB966C /* FriendListView.swift */; };
 		96CBF201292580A300EB966C /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CBF200292580A300EB966C /* CameraView.swift */; };
+		96D027032925E2C9008EEAE6 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D027022925E2C9008EEAE6 /* DetailView.swift */; };
+		96D027052925E4CA008EEAE6 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D027042925E4CA008EEAE6 /* TextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		96CBF1FC29256FBF00EB966C /* chatview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatview.swift; sourceTree = "<group>"; };
 		96CBF1FE2925709600EB966C /* FriendListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListView.swift; sourceTree = "<group>"; };
 		96CBF200292580A300EB966C /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		96D027022925E2C9008EEAE6 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		96D027042925E4CA008EEAE6 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +74,9 @@
 				96AFDD28292542C400B7A1C5 /* Preview Content */,
 				96AFDD30292554E700B7A1C5 /* MyBitmojiCircle.swift */,
 				96CBF1FC29256FBF00EB966C /* chatview.swift */,
+				96D027042925E4CA008EEAE6 /* TextView.swift */,
 				96CBF1FE2925709600EB966C /* FriendListView.swift */,
+				96D027022925E2C9008EEAE6 /* DetailView.swift */,
 				96CBF200292580A300EB966C /* CameraView.swift */,
 				963518BD2925AE560028F6E5 /* secondview.swift */,
 			);
@@ -156,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				963518BE2925AE560028F6E5 /* secondview.swift in Sources */,
+				96D027032925E2C9008EEAE6 /* DetailView.swift in Sources */,
 				96CBF1FD29256FBF00EB966C /* chatview.swift in Sources */,
 				96AFDD25292542C300B7A1C5 /* ContentView.swift in Sources */,
 				96AFDD31292554E700B7A1C5 /* MyBitmojiCircle.swift in Sources */,
@@ -163,6 +170,7 @@
 				96AFDD23292542C300B7A1C5 /* SnapchatUserInterfaceApp.swift in Sources */,
 				96CBF1FF2925709600EB966C /* FriendListView.swift in Sources */,
 				963518C02925AFBA0028F6E5 /* model.swift in Sources */,
+				96D027052925E4CA008EEAE6 /* TextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct chatview: View {
+    let textBoxes: String
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Text(textBoxes)
+        }
     }
 }
 
 struct chatview_Previews: PreviewProvider {
     static var previews: some View {
-        chatview()
+        chatview(textBoxes: "1")
     }
 }
