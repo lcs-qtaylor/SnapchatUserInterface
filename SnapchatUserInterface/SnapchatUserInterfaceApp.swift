@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct SnapchatUserInterfaceApp: App {
     @StateObject var vm = ViewModel()
-    
+   
     var body: some Scene {
         WindowGroup {
             //            CameraView()
@@ -35,7 +35,7 @@ struct SnapchatUserInterfaceApp: App {
                     .toolbarBackground( Color.black, for: .tabBar)
                 
                     .tag(2)
-                    
+                
                 
                 CameraView()
                     .tabItem {
