@@ -8,14 +8,15 @@
 import Foundation
 
 struct chatData: Identifiable {
-    let id = UUID()
-    let name: String
-    let Bitmoji: String
-    let time: String
-    let square: String
-    let textBoxes: String
+    var id = UUID()
+    var name: String
+    var Bitmoji: String
+    var time: String
+    var square: String
+    var textBoxes: String
+   
+    
 }
-
 let listOfItem = [
 
     chatData(name: "ben", Bitmoji: ".orange", time: "1h", square: "square", textBoxes: "1"),

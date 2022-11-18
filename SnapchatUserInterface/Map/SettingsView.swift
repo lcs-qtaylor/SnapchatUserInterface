@@ -1,20 +1,20 @@
 //
-//  AddNewFriendView.swift
+//  SettingsView.swift
 //  SnapchatUserInterface
 //
-//  Created by Quin Taylor on 2022-11-16.
+//  Created by Quin Taylor on 2022-11-17.
 //
 
 import SwiftUI
 
-struct AddNewFriendView: View {
+struct SettingsView: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
-struct AddNewFriendView_Previews: PreviewProvider {
+struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
-        AddNewFriendView()
+        SettingsView()
     }
 }

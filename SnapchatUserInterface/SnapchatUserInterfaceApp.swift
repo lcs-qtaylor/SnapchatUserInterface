@@ -9,7 +9,6 @@ import SwiftUI
 
 @main
 struct SnapchatUserInterfaceApp: App {
-    
     @StateObject var vm = ViewModel()
     
     var body: some Scene {
@@ -67,6 +66,7 @@ struct SnapchatUserInterfaceApp: App {
                     .toolbarBackground( Color.black, for: .tabBar)
                     .tag(5)
             }
+            
             //                .environmentObject(vm)
             //                .onAppear {
             //                    UserDefaults.standard.setValue(false, forKey: "_UIConstraintBasedLayoutLogUnsatisfiable")

@@ -12,13 +12,15 @@ struct MapView: View {
     var body: some View {
         VStack{
             Text(textBoxes)
+
         }
     }
 }
 
 struct Mapview_Previews: PreviewProvider {
     static var previews: some View {
-        MapView(textBoxes: "1")
+//        MapView(textBoxes: "1")
+        MapContentView()
     }
 }
 
