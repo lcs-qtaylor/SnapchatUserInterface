@@ -2,11 +2,12 @@ import SwiftUI
 import Firebase
 
 struct LoginView: View {
-    
     @State var isLoginMode = false
     @State var email = ""
     @State var password = ""
     @State var userIsLoggedIn = false
+    @State var loginStatusMessage = ""
+    
     var body: some View {
         if userIsLoggedIn == true { ContentView()
         } else {
@@ -18,22 +19,17 @@ struct LoginView: View {
             ScrollView {
                 
                 VStack(spacing: 16) {
-                    Picker(selection: $isLoginMode,
-                        label: Text("Picker here")) {
-                        Text("Login")
-                            .tag(true)
-                        Text("Create Account")
-                            .tag(false)
-                    }.pickerStyle(SegmentedPickerStyle())
-                    
+                    Image(systemName: "person.fill")
+                        .resizable()
+                        .frame(width: 100)
+                        .onTapGesture {
+                            isLoginMode.toggle()
+                        }
+                
                     if !isLoginMode {
-                        Button {
-                            
-                        } label: {
-                            Image(systemName: "person.fill")
+                        Image(systemName: "person.fill")
                                 .font(.system(size: 64))
                                 .padding()
-                        }
                     }
                     
                     Group {
@@ -80,9 +76,6 @@ struct LoginView: View {
         }
     }
     
-    
-    
-    
     private func loginUser() {
         Auth.auth().signIn(withEmail: email, password: password) { result, err in
             if let err = err
@@ -101,8 +94,6 @@ struct LoginView: View {
         }
     }
     
-    @State var loginStatusMessage = ""
-    
     private func createNewAccount() {
         Auth.auth().createUser(withEmail: email, password: password) { result, err in
             if let err = err {
@@ -114,8 +105,8 @@ struct LoginView: View {
             print("Successfully created user: \(result?.user.uid ?? "")")
             
             self.loginStatusMessage = "Successfully created user: \(result?.user.uid ?? "")"
-        }
-        
+            
+           }
     }
 }
 struct LoginView_Previews: PreviewProvider {
