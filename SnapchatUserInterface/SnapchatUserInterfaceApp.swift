@@ -4,16 +4,20 @@
 //
 //  Created by Quin Taylor on 2022-11-16.
 //
-
+import Firebase
 import SwiftUI
 
 @main
 struct SnapchatUserInterfaceApp: App {
     @StateObject var vm = ViewModel()
+    
+@UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
    
     var body: some Scene {
         WindowGroup {
-            //            CameraView()
+            LoginView()
+//            if userIsLoggedIn = false {LoginView()
+//            } else { ContentView() }
             TabView{
                 
                 MapContentView()
@@ -67,19 +71,18 @@ struct SnapchatUserInterfaceApp: App {
                     .tag(5)
             }
             
-            //                .environmentObject(vm)
-            //                .onAppear {
-            //                    UserDefaults.standard.setValue(false, forKey: "_UIConstraintBasedLayoutLogUnsatisfiable")
-            //                }
+        
         }
     }
 }
 
+class AppDelegate: NSObject,UIApplicationDelegate{
+         
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+             
+        FirebaseApp.configure()
+        return true
+    }
+}
 
 
-//        .toolbar(.visible, for: .tabBar)
-//
-//        .toolbarBackground(
-//            Color.black
-//            for: .tabBar)
-//

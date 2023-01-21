@@ -52,7 +52,7 @@ struct ContentView: View {
                 }
                 .toolbar {
                     ToolbarItemGroup(placement: .navigationBarTrailing) {
-                        NavigationLink(destination: AddNewFriendView()) {
+                        NavigationLink(destination: AddFriend()) {
                             Image(systemName: "person.crop.circle.fill.badge.plus").font(.title)
                                 .foregroundColor(.gray)
                         }
