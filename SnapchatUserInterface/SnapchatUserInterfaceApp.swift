@@ -16,62 +16,6 @@ struct SnapchatUserInterfaceApp: App {
     var body: some Scene {
         WindowGroup {
             LoginView()
-//            if userIsLoggedIn = false {LoginView()
-//            } else { ContentView() }
-            TabView{
-                
-                MapContentView()
-                    .tabItem {
-                        Image(systemName: "map" )
-                    }
-                    .toolbar(.visible, for: .tabBar)
-                
-                    .toolbarBackground( Color.black, for: .tabBar)
-                    .tag(1)
-                
-                ContentView()
-                    .tabItem {
-                        Image(systemName: "bubble.right")
-                    }
-                
-                    .toolbar(.visible, for: .tabBar)
-                
-                    .toolbarBackground( Color.black, for: .tabBar)
-                
-                    .tag(2)
-                
-                
-                CameraView()
-                    .tabItem {
-                        Image(systemName: "camera" )
-                    }
-                    .toolbar(.visible, for: .tabBar)
-                
-                    .toolbarBackground( Color.black, for: .tabBar)
-                    .environmentObject(vm)
-                    .tag(3)
-                
-                
-                Text("stories")
-                    .tabItem {
-                        Image(systemName: "person.2")
-                    }
-                    .toolbar(.visible, for: .tabBar)
-                
-                    .toolbarBackground( Color.black, for: .tabBar)
-                    .tag(4)
-                
-                Text("spotlight")
-                    .tabItem {
-                        Image(systemName: "play")
-                    }
-                    .toolbar(.visible, for: .tabBar)
-                
-                    .toolbarBackground( Color.black, for: .tabBar)
-                    .tag(5)
-            }
-            
-        
         }
     }
 }

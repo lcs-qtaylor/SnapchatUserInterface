@@ -15,17 +15,11 @@ struct LoginView: View {
         }
     }
     var content: some View {
-        NavigationView {
+       //NavigationView {
             ScrollView {
                 
                 VStack(spacing: 16) {
-                    Image(systemName: "person.fill")
-                        .resizable()
-                        .frame(width: 100)
-                        .onTapGesture {
-                            isLoginMode.toggle()
-                        }
-                
+                   
                     if !isLoginMode {
                         Image(systemName: "person.fill")
                                 .font(.system(size: 64))
@@ -41,21 +35,36 @@ struct LoginView: View {
                     .padding(12)
                     .background(Color.white)
                     .cornerRadius(10)
-                    
-                    Button {
-                        handleAction()
-                    } label: {
-                        HStack {
-                            Spacer()
-                            Text(isLoginMode ? "Log In" : "Create Account")
-                                .foregroundColor(.white)
-                                .padding(.vertical, 10)
-                                .font(.system(size: 14, weight: .semibold))
-                            Spacer()
-                        }.background(Color.blue)
+                    VStack{
+                        Button {
+                            handleAction()
+                        } label: {
+                            HStack {
+                                Spacer()
+                                Text(isLoginMode ? "Log In" : "Create Account")
+                                    .foregroundColor(.white)
+                                    .padding(.vertical, 10)
+                                    .font(.system(size: 14, weight: .semibold))
+                                Spacer()
+                            }.background(Color.blue)
+                            
+                        }.cornerRadius(10)
                         
-                    }.cornerRadius(10)
-                    
+                        if isLoginMode == false {
+                            Text("Already have an account? Login ")
+                                .frame(width: 300)
+                                .onTapGesture {
+                                    isLoginMode.toggle()
+                                }
+                        }
+                        if isLoginMode == true {
+                            Text("Don't have an account? Create Account")
+                                .frame(width: 300)
+                                .onTapGesture{
+                                    isLoginMode = false
+                                }
+                        }
+                    }
                     Text(self.loginStatusMessage)
                     
                 }
@@ -66,7 +75,7 @@ struct LoginView: View {
             .background(
                 LinearGradient(gradient: Gradient(colors: [.yellow, .green]), startPoint: .top, endPoint: .bottom)
                     .edgesIgnoringSafeArea(.all))
-        }
+        //}
     }
     private func handleAction() {
         if isLoginMode {

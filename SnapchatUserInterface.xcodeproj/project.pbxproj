@@ -36,6 +36,7 @@
 		96D9F7FD2926BD6700FB6905 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9F7FC2926BD6700FB6905 /* CameraViewModel.swift */; };
 		96D9F81C292719F700FB6905 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9F81B292719F700FB6905 /* ExploreView.swift */; };
 		96D9F81E29271A0600FB6905 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9F81D29271A0600FB6905 /* SettingsView.swift */; };
+		96DA2951297C54F8002772AE /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DA2950297C54F8002772AE /* TabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		96D9F7FC2926BD6700FB6905 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
 		96D9F81B292719F700FB6905 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		96D9F81D29271A0600FB6905 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		96DA2950297C54F8002772AE /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				96AFDD24292542C300B7A1C5 /* ContentView.swift */,
+				96DA2950297C54F8002772AE /* TabView.swift */,
 				96CBF1FC29256FBF00EB966C /* chatview.swift */,
 				96CBF1FE2925709600EB966C /* FriendListView.swift */,
 			);
@@ -334,6 +337,7 @@
 				963518C02925AFBA0028F6E5 /* model.swift in Sources */,
 				96D9F7E52926AF2200FB6905 /* MapContentView.swift in Sources */,
 				961CF72F2925F33F00711F3D /* ProfileView.swift in Sources */,
+				96DA2951297C54F8002772AE /* TabView.swift in Sources */,
 				96D027052925E4CA008EEAE6 /* TextView.swift in Sources */,
 				96D9F81E29271A0600FB6905 /* SettingsView.swift in Sources */,
 			);
